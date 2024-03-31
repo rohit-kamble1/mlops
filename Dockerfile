@@ -1,7 +1,7 @@
 FROM python:3.9-alpine
 COPY . /app
 WORKDIR /app
-RUN sudo apt update -y && sudo apt install awscli -y
+#RUN sudo apt update -y && sudo apt install awscli -y
 RUN pip install -r requirement.txt
 EXPOSE 8501
 CMD streamlit run app.py
